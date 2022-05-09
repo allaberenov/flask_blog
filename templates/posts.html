@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Страница о нас
+{% endblock %}
+
+
+{% block body %}
+<div class="container mt-5">
+    <h1><center>All articles</center></h1>
+
+    {% if articles|length>0  %}
+        {% for el in articles %}
+        <div class="alert alert-dark" role="alert">
+            <h2>{{ el.title }}</h2>
+            <p>{{ el.intro }}</p>
+            <p><b>Date: {{ el.date.date() }}</b></p>
+            <a href="/posts/{{ el.id }}" class="btn btn-light">More details</a>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p><b>Article storage is empty!</b></p>
+    {% endif %}
+</div>
+{% endblock %}

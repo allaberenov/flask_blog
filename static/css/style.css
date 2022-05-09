@@ -1,0 +1,23 @@
+
+/* Social links */
+.box_socials{
+  position: fixed;
+  top: 35%;
+  right: 10px;
+  z-index:999
+}
+.box_socials a{
+  clear: both;
+}
+.box_socials img {
+    opacity: 1;
+    margin-top: 6px;
+}
+.box_socials img:hover {
+    opacity: 0.8;
+}
+
+.otstup {
+style="height: 100px;
+margin: 10px 20px 30px 40px;
+}
