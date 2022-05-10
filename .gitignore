@@ -1,3 +1,6 @@
 .git
-Dockerfile
+heroku.yml
+.*
 __pyc*
+venv
+
