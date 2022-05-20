@@ -1,1 +1,6 @@
-#
+.git
+heroku.yml
+.*
+__pyc*
+venv
+

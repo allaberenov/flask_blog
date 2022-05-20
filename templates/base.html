@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+
+      <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="/about" class="nav-link px-2 text-white">About us</a></li>
+        </ul>
+
+
+        <div  class="text-end">
+            <a class="btn btn-outline-light me-2" href="/posts">All articles</a>
+            <a class="btn btn-outline-light me-2" href="/create_article">Create an article</a>
+            <a class="btn btn-warning" href="/">Main page</a>
+        </div>
+      </div>
+    </div>
+  </header>
+<body>
+<div class="container">
+    {% block body %}{% endblock %}
+</div>
+       <div class="box_socials">
+        <div><a rel="nofollow" target="_blank" href="https://t.me/Haymathew"><img width="50" height="50" alt="" src="./../static/images/free-icon-telegram-253802.png"></a></div>
+        <div><a rel="nofollow" target="_blank" href="https://vk.com/allaberenov.kerim"><img width="50" height="50" alt="" src="./../static/images/free-icon-vk-social-network-logo-25684.png"></a></div>
+        <div><a rel="nofollow" target="_blank" href="https://github.com/allaberenov/tp_1st.git"><img width="50" height="50" alt="" src="./../static/images/icons8-github-50.png"></a></div>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="text-muted">© 2022 MPTI</span>
+    </div>
+
+  </footer>
+</body>
+</html>

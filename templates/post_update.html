@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Updating
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+  <h1>Article add</h1>
+  <form method="post">
+    <b>Article header:</b>
+    <p><input type="text" name="title" class="from-control" placeholder="Enter header" value="{{ article.title }}" required="True"></p>
+    <b>Article announce:</b>
+    <p><textarea name="intro" maxlength="200" id="intro" class="from-control" placeholder="Add an announce">{{ article.intro }}</textarea></p>
+    <b>Article:</b><p><textarea name="text" id="text" class="from-control" placeholder="Text" >{{ article.text }}</textarea><br>
+    <div><input type="submit" class="btn btn-dark" value="Submit" required="True"></div>
+  </form>
+</div>
+{% endblock %}
